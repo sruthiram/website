@@ -1,6 +1,233 @@
+body {
+    color: #615d59;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+.site {
+    overflow: hidden;
+}
+
+.banner {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.site-affix.affix {
+    background: rgba(51,61,71,0.95);
+    box-shadow: none;
+    opacity: 1;
+    width: 100%;
+    z-index: 999;
+}
+
+.site-affix.affix .navbar-inner {
+    margin-top: 0;
+}
+
+.affix {
+    position: fixed;
+    background: rgba(51,61,71,0.95);
+    -webkit-transition: background .6s;
+    -moz-transition: background .6s;
+    -o-transition: background .6s;
+    transition: background .6s;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-inner {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 0;
+}
+
+.navbar-inner > .container {
+    margin-top: 50px;
+    position: relative;
+    transition: all 0.2s ease-out 0s;
+}
+
+.navbar-default .navbar-collapse {
+    overflow-x: hidden;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    margin-bottom: 8px;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #363635;
+}
+
+.navbar-collapse {
+    border: medium none;
+    padding: 0;
+}
+
+.navbar .nav li a {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.65;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: none;
+    color: #fff;
+    opacity: 1;
+}
+
+.navbar .nav li a:hover {
+    opacity: 0.85;
+    color: #fff;
+}
+
+.home {
+    height: 400px;
+    width: 100%;
+    background: url("../images/header.jpg") no-repeat scroll center center;
+}
+
+.header-text {
+    padding-top: 200px;
+    padding: 200px 40px 0 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+#websites,
+#work,
+#contact {
+    padding: 40px 0 40px 0;
+}
+
+#websites {
+    background: none repeat scroll 0 0 #ebeeed;
+}
+
+.websites-section {
+    margin-bottom: 60px;
+    margin-top: 0;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.websites-img {
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.websites-post {
+    padding: 60px;
+}
+
+.btn {
+    background: none repeat scroll 0 0 transparent;
+    transition: all 0.1s ease-out 0s;
+}
+
+.piled-segment {
+    box-shadow: 0 0 1px 1px rgba(39,41,43,.15);
+    z-index: auto;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(39,41,43,.15),0 1px 2px 0 rgba(0,0,0,.05);
+    margin: 1rem 0;
+    padding: 1em;
+    border-radius: .2857rem;
+    border: none;
+}
+
+.piled-segment:before {
+    -webkit-transform: rotate(-1.2deg);
+    -ms-transform: rotate(-1.2deg);
+    transform: rotate(-1.2deg);
+    top: 0;
+    z-index: -2;
+}
+
+.piled-segment:before {
+  background-color: #fff;
+  visibility: visible;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 1px 1px rgba(39,41,43,.15);
+}
+
+#contact {
+    background-color: #313e46;
+    color: #909fae;
+}
+
+.wrapper-info p {
+    font-size: 18px;
+}
+
+.contact-text {
+    padding-left: 10px;
+}
+
+.about-text {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .site-affix.affix-top,
+    .site-affix.affix {
+        background: rgba(51,61,71,0.95);
+        box-shadow: none;
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .site-affix.affix-top .navbar-inner,
+    .site-affix.affix .navbar-inner {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-inner {
+        margin-top: 80px;
+    }
 }
