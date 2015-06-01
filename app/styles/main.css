@@ -1,5 +1,6 @@
 body {
-    color: #615d59;
+    color: #444240;
+    background-color: #DEDEE3;
 }
 
 .browserupgrade {
@@ -22,7 +23,7 @@ body {
 }
 
 .site-affix.affix {
-    background: rgba(51,61,71,0.95);
+    background: rgba(31,37,38,0.95);
     box-shadow: none;
     opacity: 1;
     width: 100%;
@@ -35,15 +36,15 @@ body {
 
 .affix {
     position: fixed;
-    background: rgba(51,61,71,0.95);
+    background: rgba(31,37,38,0.95);
     -webkit-transition: background .6s;
     -moz-transition: background .6s;
     -o-transition: background .6s;
     transition: background .6s;
 }
 
-.navbar-default .navbar-brand {
-    color: #ffffff;
+.navbar-default .navbar-nav > li > a {
+    color: #DEDEE3;
 }
 
 .navbar-inner {
@@ -106,22 +107,28 @@ body {
     opacity: 1;
 }
 
-.navbar .nav li a:hover {
+.navbar .nav li a:hover,
+.navbar .nav li a:focus {
     opacity: 0.85;
     color: #fff;
 }
 
 .home {
-    height: 400px;
+    height: 300px;
     width: 100%;
-    background: url("../images/header.jpg") no-repeat scroll center center;
+    background: url("../images/header.jpeg");
+    background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .header-text {
     padding-top: 200px;
     padding: 200px 40px 0 40px;
     text-transform: uppercase;
-    color: #fff;
+    color: #1F2526;
     font-size: 28px;
     opacity: 0.8;
 }
@@ -190,11 +197,6 @@ body {
   box-shadow: 0 0 1px 1px rgba(39,41,43,.15);
 }
 
-#contact {
-    background-color: #313e46;
-    color: #909fae;
-}
-
 .wrapper-info p {
     font-size: 18px;
 }
@@ -212,7 +214,7 @@ body {
 @media (max-width: 767px) {
     .site-affix.affix-top,
     .site-affix.affix {
-        background: rgba(51,61,71,0.95);
+        background: rgba(31,37,38,0.95);
         box-shadow: none;
         opacity: 1;
         position: fixed;
