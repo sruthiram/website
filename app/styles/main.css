@@ -157,7 +157,12 @@ body {
 }
 
 .websites-post {
-    padding: 60px;
+    padding: 30px;
+}
+
+.websites-post p {
+    font-size: 15px;
+    line-height: 25px;
 }
 
 .btn {
@@ -225,6 +230,10 @@ body {
     .site-affix.affix-top .navbar-inner,
     .site-affix.affix .navbar-inner {
         margin-top: 0;
+    }
+
+    .websites-post {
+        padding: 30px;
     }
 }
 
