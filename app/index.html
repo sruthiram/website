@@ -19,7 +19,9 @@
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="/bower_components/animate-css/animate.min.css">
+        <link rel="stylesheet" href="/bower_components/animate-css/animate.min.css" />
+        <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/bower_components/font-awesome-animation/dist/font-awesome-animation.min.css">
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -126,8 +128,8 @@
                 <div class="container">
                     <div class="websites-section">
                         <div class="row">
-                            <div class="websites-img col-sm-4 col-md-3 col-lg-3">
-                                <img src="./images/texas_3d.png" style="width:100%;height:100%;">
+                            <div class="col-sm-4 col-md-3 col-lg-3">
+                                <div class="websites-img website-texas3d"></div>
                             </div>
                             <div class="websites-post col-sm-8 col-md-9 col-lg-9">
                                 <h2 class="animated fadeIn delay03">
@@ -141,8 +143,8 @@
                     </div>
                     <div class="websites-section">
                         <div class="row">
-                            <div class="websites-img col-sm-4 col-md-3 col-lg-3">
-                                <img src="./images/CTG.png" style="width:100%;height:100%;">
+                            <div class="col-sm-4 col-md-3 col-lg-3">
+                                <div class="websites-img website-ctg"></div>
                             </div>
                             <div class="websites-post col-sm-8 col-md-9 col-lg-9">
                                 <h2 class="animated fadeIn delay03">
@@ -159,21 +161,35 @@
 
             <section id="contact">
                 <div class="container">
-                    <div class="wrapper-info">
-                        <h3>SAY HELLO</h3>
+
+                    <div class="ribbon-segment piled-segment">
+                        <h3 class="ribbon-label">SAY HELLO</h3>
                         <p>
                             <span class="about-text">
-                                If you think we are suitable for your project, feel free to get in touch.
+                                For more information on our website design & development services (or to just say Hello!), feel free to get in touch.
                             </span>
                         </p>
-                        <p>
-                            <span class="glyphicon glyphicon-envelope"></span>
-                            <span class="contact-text">sruthiram44@gmail.com</span>
-                        </p>
-                        <p>
-                            <span class="glyphicon glyphicon-phone"></span>
-                            <span class="contact-text">972-827-7996</span>
-                        </p>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <span class="fa-stack fa-lg faa-shake animated-hover">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="contact-text">
+                                    <a href="mailto:sruthiram44@gmail.com">
+                                        sruthiram44@gmail.com
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <span class="fa-stack fa-lg faa-ring animated-hover">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="contact-text">972-827-7996</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
