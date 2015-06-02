@@ -3,6 +3,11 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~3.3.1",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "components-font-awesome": "~4.3.0",
+    "font-awesome-animation": "~0.0.6",
+    "animate-css": "~3.3.0",
+    "jquery": "~2.1.4",
+    "jquery.stellar": "~0.6.2"
   }
 }

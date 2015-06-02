@@ -285,6 +285,20 @@ body {
     border: 1px solid #DEDEE3;
 }
 
+.navbar-toggle {
+   margin: 23px 0;
+}
+
+.navbar-nav, .navbar-nav li, .navbar-nav li a {
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-nav li a {
+  padding-top: 0;
+  padding-bottom:0;
+}
+
 @media (max-width: 767px) {
     .site-affix.affix-top,
     .site-affix.affix {
@@ -309,10 +323,24 @@ body {
     .website-texas3d {
         border-radius: 3px 3px 0 0;
     }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .navbar-brand img {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
 }
 
 @media (min-width: 768px) {
     .navbar .navbar-inner {
         margin-top: 80px;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        margin-top: -5px;
     }
 }

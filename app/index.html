@@ -19,9 +19,10 @@
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="/bower_components/animate-css/animate.min.css" />
-        <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="/bower_components/font-awesome-animation/dist/font-awesome-animation.min.css">
+        <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/bower_components/font-awesome-animation/dist/font-awesome-animation.css" />
+        <link rel="stylesheet" href="/bower_components/font-awesome-animation/dist/font-awesome-animation.min.css" />
+        <link rel="stylesheet" href="/bower_components/animate-css/animate.css" />
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -45,17 +46,25 @@
 
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
-                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                              </button>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="navbar-brand">
+                                    <img class="visible-xs" src="/images/logo_mobile.png" alt="">
+                                </div>
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="menu">
                                 <ul class="nav navbar-nav navbar-right">
+                                    <li class="navbar-brand">
+                                        <a href="">
+                                            <img class="hidden-xs" src="images/logo.png" alt="">
+                                        </a>
+                                    </li>
                                     <li class="active">
                                         <a href="#home">Home</a>
                                     </li>
@@ -210,7 +219,8 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/bower_components/jquery.stellar/jquery.stellar.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
