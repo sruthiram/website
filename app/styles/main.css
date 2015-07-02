@@ -24,25 +24,12 @@ body {
     z-index: 100;
 }
 
-.site-affix.affix {
+.site-nav-bar {
     background: rgba(31,37,38,0.95);
     box-shadow: none;
-    opacity: 1;
     width: 100%;
     z-index: 999;
-}
-
-.site-affix.affix .navbar-inner {
-    margin-top: 0;
-}
-
-.affix {
     position: fixed;
-    background: rgba(31,37,38,0.95);
-    -webkit-transition: background .6s;
-    -moz-transition: background .6s;
-    -o-transition: background .6s;
-    transition: background .6s;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -159,9 +146,12 @@ body {
 }
 
 #bussinessIntelligence,
-#websiteDesign,
-#contact {
+#websiteDesign {
     padding: 80px 0 10px 0;
+}
+
+#contact {
+    padding: 20px 0 20px 0;
 }
 
 #portfolio {
@@ -178,141 +168,25 @@ body {
     padding: 10px;
 }
 
-.websites-section {
-    margin-bottom: 60px;
-    margin-top: 0;
-    position: relative;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 3px;
-}
-
-.websites-section:last-child {
-    margin-bottom: 0;
-}
-
-.websites-img {
-    height: 270px;
-}
-
-.website-ctg {
-    background-image: url("../images/CTG.png");
-}
-
-.website-texas3d {
-    background-image: url("../images/texas_3d.png");
-}
-
-.website-ctg,
-.website-texas3d {
-    border-radius: 3px 0 0 3px;
-    background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.websites-post {
-    padding: 30px;
-}
-
-.websites-post p {
-    font-size: 15px;
-    line-height: 25px;
-}
-
-.btn {
-    background: none repeat scroll 0 0 transparent;
-    transition: all 0.1s ease-out 0s;
-}
-
-.piled-segment {
-    box-shadow: 0 0 1px 1px rgba(39,41,43,.15);
-    z-index: auto;
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px rgba(39,41,43,.15),0 1px 2px 0 rgba(0,0,0,.05);
-    margin: 1rem 0;
-    padding: 1em;
-    border-radius: .2857rem;
-    border: none;
-}
-
-.piled-segment:before {
-    -webkit-transform: rotate(-1.2deg);
-    -ms-transform: rotate(-1.2deg);
-    transform: rotate(-1.2deg);
-    top: 0;
-    z-index: -2;
-    background-color: #fff;
-    visibility: visible;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    box-shadow: 0 0 1px 1px rgba(39,41,43,.15);
-}
-
-.piled-segment p {
-    padding-bottom: 20px;
-    min-height: 75px;
-}
-
-.ribbon-segment {
-    font-size: 18px;
-    /*background-color: #ffffff;
-    margin: 1rem 0;
-    padding: 1em;
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(39,41,43,.15),0 1px 2px 0 rgba(0,0,0,.05);*/
-    margin-left: 30px;
-}
-
-.ribbon-label {
-    left: calc(-1rem - 1.2em);
-    margin-right: -1.2em;
-    padding-left: calc(1rem + 1.2em);
-    position: relative;
-    margin: 0;
-    min-width: -webkit-max-content;
-    border-radius: 0 .2857rem .2857rem 0;
-    border-color: rgba(0,0,0,.15);
-    display: inline-block;
-    vertical-align: baseline;
-    line-height: 1;
-    background-color: rgba(31,37,38,0.95);
-    background-image: none;
-    padding: .6em .8em;
-    color: #ffffff;
-    text-transform: none;
-    font-weight: 700;
-    box-sizing: border-box;
-    transition: background .2s ease;
-}
-
-.ribbon-label:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 0;
-    background-color: transparent!important;
-    border-style: solid;
-    border-width: 0 20px 20px 0;
-    border-color: transparent;
-    border-right-color: inherit;
-    width: 0;
-    height: 0;
-}
-
 .contact-text {
-    padding-left: 10px;
+    padding: 10px 0 0 10px;
 }
 
 .contact-text a {
     color: #444240;
+}
+
+.contact-section {
+    padding: 50px 0 50px 0;
+    font-size: 20px;
+}
+
+.contact-email {
+    float: left;
+}
+
+.contact-number {
+    float: left;
 }
 
 .about-text {
@@ -338,30 +212,7 @@ body {
     padding-bottom:0;
 }
 
-@media (max-width: 767px) {
-    .site-affix.affix-top,
-    .site-affix.affix {
-        background: rgba(31,37,38,0.95);
-        box-shadow: none;
-        opacity: 1;
-        position: fixed;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .site-affix.affix-top .navbar-inner,
-    .site-affix.affix .navbar-inner {
-        margin-top: 0;
-    }
-
-    .websites-post {
-        padding: 30px;
-    }
-
-    .website-ctg,
-    .website-texas3d {
-        border-radius: 3px 3px 0 0;
-    }
+@media (max-width: 768px) {
 
     .navbar-brand {
         padding: 0;
@@ -374,8 +225,9 @@ body {
 }
 
 @media (min-width: 768px) {
-    .navbar .navbar-inner {
-        margin-top: 80px;
+
+    .navbar .container {
+        min-width: 760px;
     }
 
     .navbar-brand {
@@ -385,5 +237,13 @@ body {
 
     .navbar-nav, .navbar-nav li, .navbar-nav li a {
         height: 80px;
+    }
+
+    .contact-email {
+        float: left;
+    }
+
+    .contact-number {
+        float: right;
     }
 }

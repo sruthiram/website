@@ -41,7 +41,7 @@
               <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <header class="banner navbar navbar-default">
-                <div class="site-affix affix-top" data-offset-top="79" data-spy="affix" id="navBar">
+                <div class="site-nav-bar" id="navBar">
                     <div class="container">
                         <div class="navbar-inner">
 
@@ -216,11 +216,11 @@
                     </h1>
                     <div class="portfolio-background">
                         <div id="carousel" class="camera_wrap">
-                            <div data-src="./images/CTG.png">
-                                <div class="camera_caption fadeFromBottom">The text of your html element</div>
+                            <div data-src="./images/CTG.jpg">
+                                <div class="camera_caption fadeFromBottom">Catalyst Technical Group, INC</div>
                             </div>
-                            <div data-src="./images/texas_3d.png">
-                                <div class="camera_caption fadeFromBottom">The text of your html element</div>
+                            <div data-src="./images/texas_3d.jpg">
+                                <div class="camera_caption fadeFromBottom">Texas 3D Graphics</div>
                             </div>
                         </div>
                     </div>
@@ -228,33 +228,32 @@
             </section>
             <section id="contact">
                 <div class="container">
-
-                    <div class="ribbon-segment piled-segment">
-                        <h3 class="ribbon-label">SAY HELLO</h3>
-                        <p>
-                            <span class="about-text">
-                                For more information on our website design & development services (or to just say Hello!), feel free to get in touch.
-                            </span>
-                        </p>
-
+                    <h1 class="section-heading">
+                        Say Hello
+                    </h1>
+                    <div class="contact-section">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                <span class="fa-stack fa-lg faa-shake animated-hover">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <span class="contact-text">
-                                    <a href="mailto:sruthiram44@gmail.com">
-                                        sruthiram44@gmail.com
-                                    </a>
-                                </span>
+                                <div class="contact-email">
+                                    <span class="fa-stack fa-lg faa-shake animated-hover">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="mailto:sruthiram44@gmail.com">
+                                            sruthiram44@gmail.com
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                <span class="fa-stack fa-lg faa-ring animated-hover">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                                </span>
-                                <span class="contact-text">972-827-7996</span>
+                                <div class="contact-number">
+                                    <span class="fa-stack fa-lg faa-ring animated-hover">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="contact-text">972-827-7996</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -298,7 +297,7 @@
            jQuery(document).ready(function( $ ) {
                 $('#carousel').camera({
                     thumbnails: false,
-                    height: '31%',
+                    height: '80%',
                     loader: 'bar',
                 });
            });
